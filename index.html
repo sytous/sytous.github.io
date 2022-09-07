@@ -1,52 +1,3 @@
-<?php
-function __($str)
-{
-$lang="en";
-if (!empty($_GET['lang'])) $lang=$_GET['lang'];
-$words= array ("Navid Milanizadeh"=>"نوید میلانی زاده"
-                ,"I'm"=>"من"
-                ,"Web Designer, Web Developer, Front End Developer, Apps Designer, Apps Developer"=>"برنامه نویس"
-                ,"Contact Me"=>"با من تماس بگیر"
-                ,"The process of understanding and solving the problem is the most important part of a problem that forms the beginning of an innovation production cycle. This is my potential." => "فرآیند درک و حل مساله مهمترین قسمت تحلیل یک مشکل است که شروع یک چرخه تولید نوآوری را شکل می دهد. این توانایی بالقوه من است."
-                ,"Being familiar with any programming language and technology will help you find the best way to achieve your goal and use all of them at the right time."=>"اینکه از هر زبان برنامه نویسی و تکنولوژی اطلاع داشته باشی کمک می کند بهترین راه را برای رسیدن به هدف پیدا کنی و از تمام آنها به موقع استفاده کنی"
-                ,"Develop Mobile Apps in the form of Native or Web or Hybrid according to the needs of the project is of great importance for mobile and is one of the tools for designing and producing these tools."=>"طراحی برنامه های موبایل چه به صورت Native یا Web یا Hybrid با توجه به نیاز پروژه امروزه از اهمیت بسزایی برخوردار شده اند و یکی از توانایی های من طراحی و تولید اینگونه ابزارهاست"
-                ,"Software Development Life Cycle is the application of standard business practices to building software applications. It’s typically divided into six to eight steps: Planning, Requirements, Design, Build, Document, Test, Deploy, Maintain. Some project managers will combine, split, or omit steps, depending on the project’s scope. "=>"چرخه حیات توسعه نرم افزار به کارگیری شیوه های تجاری استاندارد برای ساخت برنامه های نرم افزاری است. معمولاً به شش تا هشت مرحله تقسیم می شود: برنامه ریزی، الزامات، طراحی، ساخت، سند، آزمایش، استقرار، نگهداری. برخی از مدیران پروژه بسته به محدوده پروژه، مراحل را ترکیب، تقسیم یا حذف می کنند."
-                ,"Software department manager and senior developer"=>"مدیر بخش نرم افزار و توسعه دهنده ارشد"
-                ,"Production of the first meter and estimation software in Foxpro programming language and then upgrading it to Windows with VB6 and then upgrading it with .net technology and rewriting it with C# language and developing 15 specialized civil engineering software packages, custom software development"=>"تولید اولین نرم افزار متره و برآورد به زبان برنامه نویسی Foxpro و سپس ارتقا آن به تحت ویندوز با VB6 و سپس ارتقا با تکنولوژی .net و باز نویسی با زبان C# و توسعه 15 پکیج نرم افزار تخصصی عمران ، توسعه نرم افزارهای سفارشی"
-                ,"Chairman of the Board"=>"رئیس هیات مدیره"
-                ,"Working Experience"=>"تجربه کاری"
-                ,"My Resume"=>"رزومه"
-                ,"MilanAfzar Computer Co."=>"شرکت رایانه ای میلان افزار"
-                ,"Baravord Journal"=>"مجله برآورد"
-                ,"Executive director and literary editor"=>"مدیر اجرایی و ویرایشگر ادبی"
-                ,"Editing and selection of articles and technical expert"=>"ویرایش و گزینش مقالات و کارشناس فنی"
-                ,"Management of the author group of the Estimating magazine for three years, as well as preparation of 5 articles in the specialized field of cost estimation and project costing methods, as well as literary editing of articles and selection and page layout of the magazine."=>"مدیریت گروه مولف نشریه برآورد برای سه سال و همچنین تهیه 5 مقاله در زمینه تخصصی برآورد هزینه و روش های هزینه یابی پروژه همچنین ویرایش ادبی مقالات و گزینش و صفحه آرایی مجله"
-                ,"Aluvista Co."=>"ویستا صنعت پارت"
-                ,"IT Manager"=>"مدیر IT"
-                ,"IT manager and technology consultant"=>"مدیر IT و مشاور فن آوری"
-                ,"Design of customer management system and production management system based on ISO, Kaizen implementation and website design"=>"طراحی سیستم مدیریت مشتری و سیستم مدیریت تولید بر پایه iso ، پیاده سازی کایزن و طراحی وب سایت "
-                ,"Develop and code small and big programs"=>"توسعه و کد نویسی برنامه های کوچک و بزرگ"
-                ,"Carrying out more than 80 successful projects, the first rank of the Pars Coders website for 5 consecutive years, two-digit and three-digit ranking for consecutive years, excellent feedback from employers and their satisfaction."=>"انجام بیش از 80 پروژه موفق ، رتبه اول سایت پارس کدرز برای 5 سال متوالی ، رتبه دو رقمی و سه رقمی برای سالیان متوالی ، بازخورد عالی کارفرمایان و رضایت آنها"
-                ,"Their work is very good and they are experts. They solved our problem quickly. They are also very fair. I hope they are always successful."=>"کار ایشون بسیار خوبه و متخصص هستند. مشکل ما رو به سرعت حل کردند . بسیار منصف هم هستند. امیدوارم همیشه موفق باشند."
-                ,"For three years, I struggled with the system that I promised to Mr. Nevedi to develop, and I requested a Farsi (Jalali) calendar from the distribution company, but he told me that the whole system should be changed from scratch and gave me a price that I paid for everything and then I got help from every programmer on this issue, all of them without exception cannot be said to be impossible or not within our knowledge and.... But Mr. Navidi did it with the lowest cost and all the changes in the system were done in the same way, which I really enjoyed. To make a module, I think you don't need a special flow chart, you just tell us what you want and after presenting the system, you will make a small stroke!!! Because they do the work so cleanly that you can't believe it, I used to slap myself a few times at the beginning and then I would believe it!!!!!! I enjoyed hanging out with them and I am very happy that there are people like them in the web world. And I say: for carrying out my project beyond my own wishes, whenever I come to the north of the country, I am at their service, may God bless them and their ilk."=>"من سه سال با سيستمي که براي توسعه به آقاي نويدي دادم سرو کله زدم و از شرکت توزيع کننده درخواست تقويم فارسي (جلالي) کردم اما بهم گفت کل سيستم بايد از پايه تغيير کتد و قيمتي داد که من کلا قيد همه چيز رو زدم و بعد از اين موضوع از هر برنامه نويسي کمک گرفتم همه بدون استثنا گفته نميشه محاله يا در دانش ما نيست و .... ولي آقاي نويدي با کمترين هزينه اين کار رو کرد و تمامي تغييرات سيستم هم جوري انجام شد که واقعاً نهايت لذت بردم در ضمن براي ساخت يه ماژول فکر کنم نياز به فلوچارت خاص هم نداريد شما خواسته هاتون رو بگيد و بعد از ارائه سيستم تقربباً يه سکته ريز ميزنيد !!! بخاطر اينکه اينفدر کار رو تميز انجام ميدن که باورتون نميشه من خودم اوايل يه چند تا سيلي به خودم ميزدم بعد باور ميشد!!!!!! بنده نهايت لذت رو از معاشرت با ايشون بردم و بسيار خوشحالم که افرادي مثل ايشون در دنيا وب هستن بنده قبلاً خدمتشون عرض کردم و از همين تريبون هم استفاده ميکنم!! و ميگم: بخاطر انجام پروژه بنده فراتر از خواسته هاي خودم هر وقت شمال کشور اومدن بنده هستم در خدمتوشون انشالله خداوند سايه ايشون و امثال ايشون رو ا"
-                ,"He did something for me that several programmers either said was not in my power and knowledge or was impossible! The project was more complicated than the name of the other web services, but they not only managed it well, but by receiving a more than fair amount, they handed over this work to me in a clean and perfect way. Some of his characteristics that caught my attention: responsibility - trying to do the job in the best possible way - friendly - without a bit of pride - extremely high knowledge in various fields - experienced - strong support - just Time and providing guidance even beyond the prescribed amount. I hope that if I have another project in the future, they will be honored to cooperate."=>"ايشان کاري را براي بنده انجام دادند که چندين برنامه نويس يا گفتند در توان و دانشم نيست يا محال است! پروژه نسبت به بقيه وب سرويس ها پيچيده تر از اسمش بود ولي ايشان نه تنها به خوبي از پسش برآمدند بلکه با دريافت مبلغي فراتر از منصفانه اين کار را به شکلي تميز و بي نقص تحويل بنده دادند. چند مشخصه از ايشان که توجه بنده را جلب کرد: مسئوليت پذيري - سعي در انجام کار به بهترين شکل از بهترين راه ممکن - خوش برخورد - بدون ذره اي غرور - دانش فوق العاده بالا در زمينه ها مختلف - با تجربه - پشتيباني قوي - صرف وقت و ارائه ي راهنمايي حتي فراتر از مبلغ مقرر . اميدوارم در آينده اگر پروژه ي ديگري داشتم ايشان افتخار همکاري بدهند."
-                ,""=>""
-                ,""=>""
-                ,""=>""
-                ,""=>""
-                ,""=>""                
-            );
-if ($lang =='fa')
-{
-    if (!empty($words[$str]))    
-        return $words[$str];
-    else
-        return $str;
-}
-else
-    return $str;
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -77,7 +28,7 @@ else
         <!-- Nav Bar Start -->
         <div class="navbar navbar-expand-lg bg-light navbar-light">
             <div class="container-fluid">
-                <a href="index.html" class="navbar-brand"><?=__('Navid Milanizadeh')?></a>
+                <a href="index.html" class="navbar-brand">Navid Milanizadeh</a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -108,15 +59,15 @@ else
                     <div class="col-sm-12 col-md-6">
                         <div class="hero-content">
                             <div class="hero-text">
-                                <p><?=__("I'm Navid Milanizadeh")?></p>
-                                <p><?=__("B.S.  Computer Engineering")?></p><p style="margin-top:-20px;" ><small><?=__("1379-1384")?></small></p>                                
-                                <p><?=__("Master degree   Artificial Intelligence(AI)")?></p><p style="margin-top:-20px;"><small><?=__("1395-1398")?></small></p>                                
+                                <p>I'm Navid Milanizadeh</p>
+                                <p>B.S.  Computer Engineering</p><p style="margin-top:-20px;" ><small>1379-1384</small></p>                                
+                                <p>Master degree   Artificial Intelligence(AI)</p><p style="margin-top:-20px;"><small>1395-1398</small></p>                                
                                 <h2></h2>
                                 <div class="typed-text">BackEnd Developer, Full Stack Developer, Web Designer, Web Developer, Front End Developer, Apps Designer, Apps Developer, Package Designer, Life cycle Manager , Analyzer</div>                                
                             </div>
                             <div class="hero-btn">
-                                <a class="btn" href="https://wa.me/+989121722991"><?=__("Hire Me")?></a>
-                                <a class="btn" href="#contact"><?=__("Contact Me")?></a>
+                                <a class="btn" href="https://wa.me/+989121722991">Hire Me</a>
+                                <a class="btn" href="#contact">Contact Me</a>
                             </div>
                         </div>
                     </div>
@@ -143,60 +94,60 @@ else
                     <div class="col-lg-6">
                         <div class="about-content">
                             <div class="section-header text-left">
-                                <p><?=__("Learn About Me")?></p>
-                                <h2><?=__("20 Years Experience")?></h2>
+                                <p>Learn About Me</p>
+                                <h2>20 Years Experience</h2>
                             </div>
                             <div class="about-text">
                                 <p>
-                                <?=__ ("programmer,developer with 20+ years of experience.")?>    
-                                <?=__ ("Developed and maintained 100+ applications and Web App's using Microsoft and other client languages.")?>
+                                <?=__ ("programmer,developer with 20+ years of experience.    
+                                <?=__ ("Developed and maintained 100+ applications and Web App's using Microsoft and other client languages.
                                 </p>
                             </div>
                             <div class="skills">
                                 <div class="skill-name">
-                                    <p><?=__("PHP")?></p><p>95%</p>
+                                    <p>PHP</p><p>95%</p>
                                 </div>
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                                 <div class="skill-name">
-                                    <p><?=__("JAVA")?></p><p>85%</p>
+                                    <p>JAVA</p><p>85%</p>
                                 </div>
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                                 <div class="skill-name">
-                                    <p><?=__("Python")?></p><p>90%</p>
+                                    <p>Python</p><p>90%</p>
                                 </div>
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                                 <div class="skill-name">
-                                    <p><?=__("C# & VB.Net")?></p><p>85%</p>
+                                    <p>C# & VB.Net</p><p>85%</p>
                                 </div>
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                                 <div class="skill-name">
-                                    <p><?=__("PHP Frameworks and CMS Packages(Laravel,PHPCake,Wordpress,Dropal,Joomla,..)")?></p><p>95%</p>
+                                    <p>PHP Frameworks and CMS Packages(Laravel,PHPCake,Wordpress,Dropal,Joomla,..)</p><p>95%</p>
                                 </div>
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                                 <div class="skill-name">
-                                    <p><?=__("VB6 & Foxpro")?></p><p>100%</p>
+                                    <p>VB6 & Foxpro</p><p>100%</p>
                                 </div>
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                                 <div class="skill-name">
-                                    <p><?=__("Socket & API")?></p><p>90%</p>
+                                    <p>Socket & API</p><p>90%</p>
                                 </div>
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
-                            <a class="btn" href="#service"><?=__("Learn More")?></a>
+                            <a class="btn" href="#service">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -209,8 +160,8 @@ else
         <div class="service" id="service">
             <div class="container">
                 <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p><?=__("What I do")?></p>
-                    <h2><?=__("Awesome Quality Services")?></h2>
+                    <p>What I do</p>
+                    <h2>Awesome Quality Services</h2>
                 </div>
                 <div class="row">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
@@ -219,9 +170,9 @@ else
                                 <i class="fa fa-cogs"></i>
                             </div>
                             <div class="service-text">
-                                <h3><?=__("Problem Solving")?></h3>
+                                <h3>Problem Solving</h3>
                                 <p>
-                                    <?=__("The process of understanding and solving the problem is the most important part of a problem that forms the beginning of an innovation production cycle. This is my potential.")?>
+                                    The process of understanding and solving the problem is the most important part of a problem that forms the beginning of an innovation production cycle. This is my potential.
                                 </p>
                             </div>
                         </div>
@@ -232,9 +183,9 @@ else
                                 <i class="fa fa-laptop-code"></i>
                             </div>
                             <div class="service-text">
-                                <h3><?=__("Full Stack Developing")?></h3>
+                                <h3>Full Stack Developing</h3>
                                 <p>
-                                    <?=__("Being familiar with any programming language and technology will help you find the best way to achieve your goal and use all of them at the right time.")?>
+                                    Being familiar with any programming language and technology will help you find the best way to achieve your goal and use all of them at the right time.
                                 </p>
                             </div>
                         </div>
@@ -245,9 +196,9 @@ else
                                 <i class="fab fa-android"></i>
                             </div>
                             <div class="service-text">
-                                <h3><?=__("Apps Development")?></h3>
+                                <h3>Apps Development</h3>
                                 <p>
-                                    <?=__("Develop Mobile Apps in the form of Native or Web or Hybrid according to the needs of the project is of great importance for mobile and is one of the tools for designing and producing these tools.")?>
+                                    Develop Mobile Apps in the form of Native or Web or Hybrid according to the needs of the project is of great importance for mobile and is one of the tools for designing and producing these tools.
                                 </p>
                             </div>
                         </div>
@@ -258,9 +209,9 @@ else
                                 <i class="fab fa-angellist"></i>
                             </div>
                             <div class="service-text">
-                                <h3><?=__("SDLC")?></h3>
+                                <h3>SDLC</h3>
                                 <p>
-                                    <?=__("Software Development Life Cycle is the application of standard business practices to building software applications. It’s typically divided into six to eight steps: Planning, Requirements, Design, Build, Document, Test, Deploy, Maintain. Some project managers will combine, split, or omit steps, depending on the project’s scope. ")?>
+                                    Software Development Life Cycle is the application of standard business practices to building software applications. It’s typically divided into six to eight steps: Planning, Requirements, Design, Build, Document, Test, Deploy, Maintain. Some project managers will combine, split, or omit steps, depending on the project’s scope. 
                                 </p>
                             </div>
                         </div>
@@ -274,47 +225,47 @@ else
         <div class="experience" id="experience">
             <div class="container">
                 <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p><?=__("My Resume")?></p>
-                    <h2><?=__("Working Experience")?></h2>
+                    <p>My Resume</p>
+                    <h2>Working Experience</h2>
                 </header>
                 <div class="timeline">
                     <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
                         <div class="timeline-text">
-                            <div class="timeline-date"><?=__("MilanAfzar Computer Co.")?></div>
-                            <h2><?=__("Chairman of the Board")?></h2>
-                            <h4><?=__("Software department manager and senior developer")?></h4>
+                            <div class="timeline-date">MilanAfzar Computer Co.</div>
+                            <h2>Chairman of the Board</h2>
+                            <h4>Software department manager and senior developer</h4>
                             <p>
-                                <?=__("Production of the first meter and estimation software in Foxpro programming language and then upgrading it to Windows with VB6 and then upgrading it with .net technology and rewriting it with C# language and developing 15 specialized civil engineering software packages, custom software development")?>
+                                Production of the first meter and estimation software in Foxpro programming language and then upgrading it to Windows with VB6 and then upgrading it with .net technology and rewriting it with C# language and developing 15 specialized civil engineering software packages, custom software development
                             </p>
                         </div>
                     </div>
                     <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
                         <div class="timeline-text">
-                            <div class="timeline-date"><?=__("Baravord Journal")?></div>
-                            <h2><?=__("Executive director and literary editor")?></h2>
-                            <h4><?=__("Editing and selection of articles and technical expert")?></h4>
+                            <div class="timeline-date">Baravord Journal</div>
+                            <h2>Executive director and literary editor</h2>
+                            <h4>Editing and selection of articles and technical expert</h4>
                             <p>
-                                <?=__("Management of the author group of the Estimating magazine for three years, as well as preparation of 5 articles in the specialized field of cost estimation and project costing methods, as well as literary editing of articles and selection and page layout of the magazine.")?>
+                                Management of the author group of the Estimating magazine for three years, as well as preparation of 5 articles in the specialized field of cost estimation and project costing methods, as well as literary editing of articles and selection and page layout of the magazine.
                             </p>
                         </div>
                     </div>
                     <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
                         <div class="timeline-text">
-                            <div class="timeline-date"><?=__("Aluvista Co.")?></div>
-                            <h2><?=__("IT Manager")?></h2>
-                            <h4><?=__("IT manager and technology consultant")?></h4>
+                            <div class="timeline-date">Aluvista Co.</div>
+                            <h2>IT Manager</h2>
+                            <h4>IT manager and technology consultant</h4>
                             <p>
-                                <?=__("Design of customer management system and production management system based on ISO, Kaizen implementation and website design")?>
+                                Design of customer management system and production management system based on ISO, Kaizen implementation and website design
                             </p>
                         </div>
                     </div>
                     <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
                         <div class="timeline-text">
-                            <div class="timeline-date"><?=__("FreeLancer")?></div>
-                            <h2><?=__("Free Programming")?></h2>
-                            <h4><?=__("Develop and code small and big programs")?></h4>
+                            <div class="timeline-date">FreeLancer</div>
+                            <h2>Free Programming</h2>
+                            <h4>Develop and code small and big programs</h4>
                             <p>
-                                <?=__("Carrying out more than 80 successful projects, the first rank of the Pars Coders website for 5 consecutive years, two-digit and three-digit ranking for consecutive years, excellent feedback from employers and their satisfaction.")?>
+                                Carrying out more than 80 successful projects, the first rank of the Pars Coders website for 5 consecutive years, two-digit and three-digit ranking for consecutive years, excellent feedback from employers and their satisfaction.
                             </p>
                         </div>
                     </div>
@@ -561,7 +512,7 @@ else
                         </div>
                         <div class="testimonial-text">
                             <p>
-                                <?=__("Their work is very good and they are experts. They solved our problem quickly. They are also very fair. I hope they are always successful.")?>
+                                Their work is very good and they are experts. They solved our problem quickly. They are also very fair. I hope they are always successful.
                             </p>
                             <h3>Reza64</h3>
                             <h4>Belitkade.ir</h4>
@@ -573,7 +524,7 @@ else
                         </div>
                         <div class="testimonial-text">
                             <p>
-                               <?=__("For three years, I struggled with the system that I promised to Mr. Nevedi to develop, and I requested a Farsi (Jalali) calendar from the distribution company, but he told me that the whole system should be changed from scratch and gave me a price that I paid for everything and then I got help from every programmer on this issue, all of them without exception cannot be said to be impossible or not within our knowledge and.... But Mr. Navidi did it with the lowest cost and all the changes in the system were done in the same way, which I really enjoyed. To make a module, I think you don't need a special flow chart, you just tell us what you want and after presenting the system, you will make a small stroke!!! Because they do the work so cleanly that you can't believe it, I used to slap myself a few times at the beginning and then I would believe it!!!!!! I enjoyed hanging out with them and I am very happy that there are people like them in the web world. And I say: for carrying out my project beyond my own wishes, whenever I come to the north of the country, I am at their service, may God bless them and their ilk.")?>
+                               For three years, I struggled with the system that I promised to Mr. Nevedi to develop, and I requested a Farsi (Jalali) calendar from the distribution company, but he told me that the whole system should be changed from scratch and gave me a price that I paid for everything and then I got help from every programmer on this issue, all of them without exception cannot be said to be impossible or not within our knowledge and.... But Mr. Navidi did it with the lowest cost and all the changes in the system were done in the same way, which I really enjoyed. To make a module, I think you don't need a special flow chart, you just tell us what you want and after presenting the system, you will make a small stroke!!! Because they do the work so cleanly that you can't believe it, I used to slap myself a few times at the beginning and then I would believe it!!!!!! I enjoyed hanging out with them and I am very happy that there are people like them in the web world. And I say: for carrying out my project beyond my own wishes, whenever I come to the north of the country, I am at their service, may God bless them and their ilk.
                             </p>
                             <h3>MisterBR</h3>
                             <h4>Shamsi.ir</h4>
@@ -585,7 +536,7 @@ else
                         </div>
                         <div class="testimonial-text">
                             <p>
-                                <?=__("He did something for me that several programmers either said was not in my power and knowledge or was impossible! The project was more complicated than the name of the other web services, but they not only managed it well, but by receiving a more than fair amount, they handed over this work to me in a clean and perfect way. Some of his characteristics that caught my attention: responsibility - trying to do the job in the best possible way - friendly - without a bit of pride - extremely high knowledge in various fields - experienced - strong support - just Time and providing guidance even beyond the prescribed amount. I hope that if I have another project in the future, they will be honored to cooperate.")?>
+                                He did something for me that several programmers either said was not in my power and knowledge or was impossible! The project was more complicated than the name of the other web services, but they not only managed it well, but by receiving a more than fair amount, they handed over this work to me in a clean and perfect way. Some of his characteristics that caught my attention: responsibility - trying to do the job in the best possible way - friendly - without a bit of pride - extremely high knowledge in various fields - experienced - strong support - just Time and providing guidance even beyond the prescribed amount. I hope that if I have another project in the future, they will be honored to cooperate.
                             </p>
                             <h3>Saman0098</h3>
                             <h4>Directi</h4>
@@ -789,8 +740,8 @@ else
             <div class="container-fluid">
                 <div class="container">
                     <div class="footer-info">
-                        <h2><?=__("Navid Milanizadeh")?></h2>
-                        <h3><?=__("No 35 - Fakouri Blv - Mashhad - Iran")?></h3>
+                        <h2>Navid Milanizadeh</h2>
+                        <h3>No 35 - Fakouri Blv - Mashhad - Iran</h3>
                         <div class="footer-menu">
                             <p>+98 912 172 2991</p>
                             <p>sytous@gmail.com</p>
